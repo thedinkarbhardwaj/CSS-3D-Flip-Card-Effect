@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Image 3d Flowing </title>
+
+	<style type="text/css">
+		
+		#dinkar{
+			width: 320px;
+			height: 220px;
+			padding-top: 100px;
+            perspective: 400px;
+            
+		}
+
+		#lets{
+			width: 100%;
+			height:100%;
+			position: relative;	
+			transition: transform 0.9s;
+			transform-style: preserve-3d;	
+		}
+
+		#dinkar:hover #lets{
+           transform:rotateX(180deg);
+		}
+
+		#frontside, #backside{
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			backface-visibility: hidden;
+		}
+
+
+         #backside{
+         	background-color: red;
+         	color: white;
+         	transform: rotateX(180deg);
+         }
+
+         #frontside img{
+         	width: 300px;
+         	height: 200px;
+         	border: 10px solid black;
+         }
+
+
+   
+	</style>
+</head>
+<body>
+	<center>
+		<a href="https://technicaldestination.blogspot.com/2019/03/hacking-prank-with-friends.html"><h1 style="color: blue"> Welcome to www.technicaldestination.blogspot.com</h1> </a>
+		<h1> Please visit It</h1>
+	<div id="dinkar">
+		<div id="lets">
+		<div id="frontside">
+<img src="Sachin.jpg" alt="Image 3d" width="200px;" height="200px">
+
+
+</div>
+ 
+  <div id="backside">
+
+    <center>
+ <h1 style="color: green"> Hello World </h1>
+ <h3> <a href="https://www.youtube.com" style="color: white; text-decoration: none;">Welcome to Mumbai</h3>
+
+ </center>
+
+  </div>
+</div>
+</div>
+</center>
+
+</body>
+</html>
